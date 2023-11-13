@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahallah Siddiq</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <a class="navbar-brand" href="#"><img id="siddiq_logo" src="images/mahallah siddiq logo.png" alt=""></a>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" id="home" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LINE-UP</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">FACILITIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="navbar-brand" href="#"><img id="iium_logo" src="images/iium logo.png" alt=""></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navigation bar -->
+    <!-- slideshow -->
+    <section id="slideshowContainer">
+        <img class="imageSlides" src="images/test_image.png" alt="beach side city view">
+        <img class="imageSlides" src="images/slideshow1.jpg" alt="leaf on the ground">
+        <img class="imageSlides" src="images/slideshow2.jpg" alt="lake surrounded by mountains">
+        
+      <!-- I would recommend to replace these 'span' elements with 'img' files
+      for each the left and right arrow that fits your project, and size accordingly.
+      I've shown 'span' elements because I didn't want to upload files. -->
+        <span id ="leftArrow" class="slideshowArrow">&#8249;</span>
+        <span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+        
+        <div class="slideshowCircles">
+      <!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
+      Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. -->
+          <span class="circle dot"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+        
+      </section>
+      <!-- end of slideshow -->
+      <!-- about -->
+      <section class="about">
+        <div class="title">
+          <h1 class="fs-2 fw-bold text-center about-title">ABOUT OUR MAHALLAH</h1>
+        </div>
+        <div class="about_paragraph">
+          <p class="w-75 text-center fs-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum eveniet cum vero eligendi necessitatibus aliquam libero praesentium velit fuga minima ipsa sequi enim error quod quis, accusantium perferendis quia. Ad deserunt expedita eveniet obcaecati libero architecto explicabo esse quisquam molestiae, fugit consequatur illum nam ut, repellat recusandae deleniti quod placeat nostrum nulla in aliquid laborum, praesentium doloribus! Pariatur mollitia libero velit repellat aperiam tempore veniam sint, quibusdam adipisci rem vero, nihil totam aut ipsum, natus temporibus debitis perspiciatis quis fuga cumque laboriosam recusandae sapiente sequi quo? Nemo asperiores exercitationem soluta explicabo inventore animi. Voluptates nisi delectus temporibus quae! Aspernatur?
+          </p>
+        </div>
+      </section>
+      <!-- end of about -->
+      <section class="our_room container-content">
+        <div class="column">
+          <h1 class="text-number first">01</h1>
+          <h3 class="pt-4 pb-5 text-title">Our Room</h3>
+          <p class="pt-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat qui accusantium quam quisquam ducimus at laboriosam repellendus nostrum est repudiandae adipisci, incidunt itaque, perspiciatis id dicta commodi cumque officia sint labore necessitatibus, provident praesentium? Quis quae, mollitia voluptates facilis iure dolor nesciunt fugit pariatur dicta sit, ex cumque quam?</p>
+          <button type="button" class="button-more mt-4 p-2" href="#">Read more</button>
+        </div>
+        <div class="column image-container">
+          <img class="img-1" src="images/test_pic.png" alt="">
+          <img class="img-2" src="images/test_pic.png" alt="">
+        </div>  
+      </section>
+      <!-- qwertyu -->
+      <section class="look_around container-content">
+        <div class="column image-container">
+          <img class="img-1" src="images/test_pic.png" alt="">
+          <img class="img-2" src="images/test_pic.png" alt="">
+        </div> 
+        <div class="column">
+          <h1 class="text-number first">02</h1>
+          <h3 class="pt-4 pb-5 text-title">Look Around</h3>
+          <p class="pt-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat qui accusantium quam quisquam ducimus at laboriosam repellendus nostrum est repudiandae adipisci, incidunt itaque, perspiciatis id dicta commodi cumque officia sint labore necessitatibus, provident praesentium? Quis quae, mollitia voluptates facilis iure dolor nesciunt fugit pariatur dicta sit, ex cumque quam?</p>
+          <button type="button" class="button-more mt-4 p-2" href="#">Read more</button>
+        </div> 
+      </section>
+      <!-- ertyu -->
+      <section class="our-office container-content">
+        <div class="column">
+          <h1 class="text-number first">03</h1>
+          <h3 class="pt-4 pb-5 text-title">Our Office</h3>
+          <p class="pt-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat qui accusantium quam quisquam ducimus at laboriosam repellendus nostrum est repudiandae adipisci, incidunt itaque, perspiciatis id dicta commodi cumque officia sint labore necessitatibus, provident praesentium? Quis quae, mollitia voluptates facilis iure dolor nesciunt fugit pariatur dicta sit, ex cumque quam?</p>
+          <button type="button" class="button-more mt-4 p-2" href="#">Read more</button>
+        </div>
+        <div class="column image-container">
+          <img class="img-1" src="images/test_pic.png" alt="">
+          <img class="img-2" src="images/test_pic.png" alt="">
+        </div>  
+      </section>
+      <footer>
+        <a class="navbar-brand" href="#"><img id="siddiq_logo_footer" src="images/mahallah siddiq logo.png" alt=""></a>
+        <div class="contact_number">
+          <p class="contact">Contact Us: </p>
+          <p class="contact">+6012-345-6789</p>
+        </div>
+      </footer>
+
+
+
+      <script src="homepage.js"></script>
+</body>
+</html>

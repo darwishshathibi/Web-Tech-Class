@@ -1,0 +1,46 @@
+/*navbar css*/
+#siddiq_logo, #iium_logo {
+  width: 65px;
+  height: 65px;
+  margin: 0px 10px;
+}
+
+.navbar .navbar-nav .nav-item a{
+    padding: 5px 20px;
+    margin: 0px 10px;
+}
+
+.navbar .navbar-nav .nav-item a:hover{
+    color: blue;
+}
+
+.navbar .navbar-nav .nav-item a.active{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar .navbar-nav{
+    text-align: center;
+}
+/*end of navbar*/
+
+/*footer css*/
+footer{
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer #siddiq_logo_footer{
+  width: 65px;
+  height: 65px;
+}
+
+footer .contact_number .contact{
+  color: white;
+  margin: 0px;
+}
+/end of footer

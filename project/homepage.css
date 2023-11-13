@@ -1,0 +1,198 @@
+/* FILEPATH: /D:/Users/User/OneDrive - International Islamic University Malaysia/Documents/Web Tech Class/project/homepage.css */
+/* * {
+  border: 1px solid green;
+} */
+
+#siddiq_logo, #iium_logo {
+  width: 65px;
+  height: 65px;
+  margin: 0px 10px;
+}
+
+.navbar .navbar-nav .nav-item a{
+    padding: 5px 20px;
+    margin: 0px 10px;
+}
+
+.navbar .navbar-nav .nav-item a:hover{
+    color: blue;
+}
+
+.navbar .navbar-nav .nav-item a.active{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar .navbar-nav{
+    text-align: center;
+}
+
+
+#slideshowContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  
+.imageSlides {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+}
+
+  /* * add 'visible' class via Javascript */
+.visible {
+  opacity: 1;
+}
+
+.slideshowArrow {
+  font-size: 7em;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slideshowArrow:hover {
+  opacity: 0.75;
+}
+
+#leftArrow {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#rightArrow {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.slideshowCircles {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.circle {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  transition: 1s ease-in-out;
+}
+
+.dot {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+.about{
+    height: auto;
+}
+
+.about .title{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .title .about-title{
+    padding-bottom: 60px;
+    width: fit-content;
+    border-bottom: 3px solid black;
+}
+
+.about .about_paragraph{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 300px 0px;
+}
+
+.column{
+  width: 600px;
+  padding: 30px;
+}
+
+.text-number{
+  font-size: 80px;
+  color: blue;
+}
+
+.text-title{
+  border-bottom: 3px solid black;
+}
+
+.button-more{
+  border: 1px solid black;
+}
+
+.button-more:hover{
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img{
+  width: 280px;
+  height: 300px;
+}
+
+.image-container .img-1{
+  align-items: flex-start;
+}
+
+.image-container .img-2{
+  align-items: flex-end;
+}
+
+footer{
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer #siddiq_logo_footer{
+  width: 65px;
+  height: 65px;
+}
+
+footer .contact_number .contact{
+  color: white;
+  margin: 0px;
+}
