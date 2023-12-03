@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initialscale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <label for="int1">Enter your first integer </label>
+            <input type="text" name="int1" id="int1">
+            <br>
+            <label for="int2">Enter your second integer</label>
+            <input type="text" name="int2" id="int2">
+            <br>
+            <button type="button" onclick="addIntegers()">Add</button>
+            <button type="button" onclick="subIntegers()">Substract</button>
+            <button type="button" onclick="mulIntegers()">Multiply</button>
+            <button type="button" onclick="dvIntegers()">Divide</button>
+            <p id="result"></p>
+            <script>
+                function addIntegers () {
+                let num1 = Number(document.getElementById("int1").value);
+                let num2 = Number(document.getElementById("int2").value);
+                let add = num1 + num2;
+                document.getElementById("result").innerHTML =
+                num1 + " + " + num2 + " = " + add;
+                // let sub = num1 - num2;
+                // document.getElementById("result_sub").innerHTML =
+                // num1 + " - " + num2 + " = " + sub;
+                // let mul = num1 * num2;
+                // document.getElementById("result_mul").innerHTML =
+                // num1 + " * " + num2 + " = " + mul;
+                // let dv = num1 / num2;
+                // document.getElementById("result_dv").innerHTML =
+                // num1 + " / " + num2 + " = " + dv;
+
+            }
+
+            function subIntegers (){
+                let num1 = Number(document.getElementById("int1").value);
+                let num2 = Number(document.getElementById("int2").value);
+                let sub = num1 - num2;
+                document.getElementById("result").innerHTML =
+                num1 + " - " + num2 + " = " + sub;
+            }
+
+            function mulIntegers (){
+                let num1 = Number(document.getElementById("int1").value);
+                let num2 = Number(document.getElementById("int2").value);
+                let mul = num1 * num2;
+                document.getElementById("result").innerHTML =
+                num1 + " * " + num2 + " = " + mul;
+            }
+
+            function dvIntegers (){
+                let num1 = Number(document.getElementById("int1").value);
+                let num2 = Number(document.getElementById("int2").value);
+                let dv = num1 / num2;
+                document.getElementById("result_dv").innerHTML =
+                num1 + " / " + num2 + " = " + dv;
+            }
+
+            </script>
+        </body>
+    </html>

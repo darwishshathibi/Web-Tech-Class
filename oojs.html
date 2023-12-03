@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP in JS</title>
+</head>
+<body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="h ps://developer.mozilla.org/enUS/docs/Learn/Common_ques ons/What_are_browser_developer_tools">What are browser developer tools</a> for more informa on).</p> 
+</body>
+<script>
+    // const person ={
+    //     name: ["Kate", "Smith"],
+    //     age: 32,
+    //     gender: "female",
+    //     bio(){
+    //         alert(
+    //             `${this.name[0]} ${this.name[1]} is ${this.age} years old. She likes ${this.interests[0]} and ${this.interests[1]}.`,
+    //         )
+    //     },
+    //     greeting(){
+    //         alert("Hi! I'm ${this.name[0]}.");
+    //     }
+    // };
+    // const myDataName = "height";
+    // const myDataValue = "1.75m";
+    // person[myDataName] = myDataValue;
+
+    const Person (first, last, age, gender, interest);{
+        this.name={
+            "first": first,
+            "last": last
+        };
+        this.age = age;
+        this.gender = gender;
+        this.interests = interests;
+        this.bio = function(){
+            var string = this.name.first + " " + this.name.last + " is " + this.age + " years old. ";
+            var pronoun;
+            if(this.gender === "male" || this.gender === "Male" || this.gender === "m" || this.gender === "M"){
+                pronoun = "He likes ";
+            } else if (this.gender === 'female' || this.gender === 'Female' || this.gender === 'f' || this.gender === 'F'){
+                pronoun = "She likes ";
+            } else {
+                pronoun = "They like ";
+            }
+
+              // add the pronoun string on to the end of the main string 
+            string += pronoun;
+
+            if(this.interests.length === 1){
+                string += this.interests[0] + ".";
+            } else if (this.interests.length === 2){
+                string += this.interests[0] + " and " + this.interests[1] + ".";
+            } else {
+                for(i = 0; i < this.interests.length; i++){
+                    if(i === this.interests.length - 1){
+                        string += "and " + this.interests[i] + ".";
+                    } else {
+                        string += this.interests[i] + ", ";
+                    }
+                }
+            }
+        };
+    };
+</script>
+</html>

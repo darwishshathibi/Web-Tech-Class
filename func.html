@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h2 id="a"></h2>
+    <h2 id="b"></h2>
+    <h2 id="random"></h2>
+    <h2 id="myString"></h2>
+    <h2 id="multiply"></h2>
+
+    <script>
+        let a = Math.max(1,2,3,4,5,6,7,8,9,10);
+        let b = Math.min(1,2,3,4,5,6,7,8,9,10);
+
+        let random = Math.floor(Math.random() * 10) + 1;
+
+        var myString = "I'm a \"fun\" string";
+        // var myString = replace("fun", "awesome");
+        
+        document.getElementById("a").innerHTML = a;
+        document.getElementById("b").innerHTML = b;
+        document.getElementById("random").innerHTML = random;
+        document.getElementById("myString").innerHTML = myString;
+
+
+        var num = multiply(a, random);
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        document.getElementById("multiply").innerHTML = num;
+    </script>
+</body>
+</html>
